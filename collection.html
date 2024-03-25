@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--  Set the character encoding to UTF-8 and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to external stylesheet -->
+    <link href="{{ url_for('static', filename='home.css') }}" rel="stylesheet"/>
+    
+    <!-- Page title -->
+    <title>Data Collection - Glasgow International College Progress Assessment</title>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/information">Information</a>
+        <a href="/collection">Data-collection</a>
+    </div>
+
+    <!-- Page header -->
+    <header>
+        <h1>Data Collection - Glasgow International College Progress Assessment</h1>
+    </header>
+    
+    <!-- Main content -->
+    <main>
+        <!-- Section for data collection form -->
+        <section id="data-collection">
+            <h2>Student Progress Questionnaire</h2>
+            <!-- Form for submitting data -->
+            <form action="collection" method="post">
+                
+                <!-- Input fields for name, student number, and email -->
+                {{ form.name.label }}
+                {{form.name}}
+
+
+                {{form.student_number.label}}
+    
+                {{form.student_number}}
+
+                {{ form.email.label }}
+                {{form.email}}
+
+                {{ form.grades.label }}
+                {{form.grades}}
+
+                {{ form.suggestions_for_improvement.label }}
+                {{form.suggestions_for_improvement}}
+
+                {{ form.satisfaction.label }}
+                {{form.satisfaction}}
+
+                <!-- Radio buttons for satisfaction level -->
+                <!-- <label>Satisfaction:</label>
+                <input type="radio" id="very-satisfied" name="satisfaction" value="very satisfied" required>
+                <label for="very-satisfied">Very Satisfied</label>
+
+                <input type="radio" id="satisfied" name="satisfaction" value="satisfied" required>
+                <label for="satisfied">Satisfied</label>
+
+                <input type="radio" id="balanced" name="satisfaction" value="balanced" required>
+                <label for="balanced">Balanced</label>
+
+                <input type="radio" id="dissatisfied" name="satisfaction" value="dissatisfied" required>
+                <label for="unsatisfied">Unsatisfied</label> -->
+
+                <!-- Submit button -->
+                {{form.submit}}
+        
+            </form>
+        </section>
+    </main>
+
+    <!-- Page footer -->
+    <footer>
+        <p>&copy; 2024 Glasgow International College Progress Assessment. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

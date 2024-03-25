@@ -1,0 +1,109 @@
+header {
+    background-color: #4285f4;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.navbar {
+    text-align: left;
+    padding-bottom: 2%;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    margin: 0 10px;
+    
+}
+
+.navbar a:hover {
+    color: black;
+}
+
+h1 {
+    text-align: left;
+    padding-top: 10%;
+}
+
+h2 {
+    padding-top: 10%;
+}
+
+footer {
+    color: #ffffff;
+    background-color: rgb(105, 145, 219);
+    padding: 1%;
+    position: relative;
+    text-align: center;
+    
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Style for the entire form section */
+#data-collection {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Style for the form header */
+#data-collection h2 {
+    color: #333;
+}
+
+/* Style for the form labels and inputs */
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+/* Style for radio buttons */
+input[type="radio"] {
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+/* Style for the submit button */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Optional: Add some spacing and alignment for better readability */
+form {
+    margin-top: 20px;
+}
+
+/* Optional: Add some styling for validation messages */
+input:invalid {
+    border: 1px solid rgb(17, 48, 223);
+}
+
+/* Optional: Add styling for a successful submission message */
+.success-message {
+    color: rgb(17, 48, 223);
+    font-weight: bold;
+}
+
+
